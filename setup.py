@@ -8,7 +8,7 @@ setup(
   author = 'Karthik T',
   author_email = 'karthikt.holmes+github@gmail.com',
   url = 'https://github.com/ktaragorn/mongo_cache', # use the URL to the github repo
-  download_url = 'https://github.com/ktaragorn/mongo_cache/tarball/0.1', # I'll explain this in a second
+  download_url = 'https://github.com/ktaragorn/mongo_cache/tarball/0.1.1',
   keywords = ['cache', 'mongodb'], # arbitrary keywords
   install_requires=[
     'pymongo',
