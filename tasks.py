@@ -29,3 +29,17 @@ def rerun():
 	 except Failure as e:
 	 	print "The tool rerun isnt installed, installing it now, please try again."
 	 	run("gem install rerun --no-ri --no-rdoc")
+
+@task
+def register_pypi(test=False):
+	pypi = "pypi"
+	if test:
+		pypi = pypi + "test"
+	run("python setup.py register -r " + pypi)
+
+@task
+def upload_pypi(test=False):
+	pypi = "pypi"
+	if test:
+		pypi = pypi + "test"
+	run("python setup.py sdist upload -r " + pypi)
