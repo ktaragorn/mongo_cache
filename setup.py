@@ -1,4 +1,5 @@
 from distutils.core import setup
+import setuptools
 setup(
   name = 'mongo_cache',
   packages = ['mongo_cache'], # this must be the same as the name above
@@ -9,5 +10,8 @@ setup(
   url = 'https://github.com/ktaragorn/mongo_cache', # use the URL to the github repo
   download_url = 'https://github.com/ktaragorn/mongo_cache/tarball/0.1', # I'll explain this in a second
   keywords = ['cache', 'mongodb'], # arbitrary keywords
+  install_requires=[
+    'pymongo',
+  ],
   classifiers = [],
 )
