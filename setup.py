@@ -3,7 +3,7 @@ import setuptools
 setup(
   name = 'mongo_cache',
   packages = ['mongo_cache'], # this must be the same as the name above
-  version = '0.1',
+  version = '0.1.1',
   description = 'A library for a cache backed by mongodb',
   author = 'Karthik T',
   author_email = 'karthikt.holmes+github@gmail.com',
