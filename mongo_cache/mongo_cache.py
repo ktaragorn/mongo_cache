@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 import time
 class MongoCache(object):
-	def __init__(self, mongo_db = MongoClient().cache_database, size=0, cache_collection="cache_collection"):
+	def __init__(self, mongo_db = MongoClient().cache_database, cache_collection="cache_collection", size=0):
 		self.cache_collection=mongo_db[cache_collection]
 		#todo handle size
 
